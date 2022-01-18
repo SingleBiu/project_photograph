@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.go": "go",
+        "bmp.h": "c",
+        "input.h": "c",
+        "dir.h": "c",
+        "linkedlist.h": "c",
+        "stdlib.h": "c",
+        "lcd.h": "c",
+        "jpeglib.h": "c",
+        "jpg.h": "c"
+    }
+}
