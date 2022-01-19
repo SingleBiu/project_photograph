@@ -6,6 +6,17 @@
  * @Description: file content
 -->
 # project_photograph
-Usage: ./main [pic directory]
-For example : ./main ./
-             ./main ../pic
+Usage: 
+
+```shell
+./main [pic directory]
+```
+
+For example :
+
+```shell
+./main ./
+#or
+./main ../pic
+```
+
