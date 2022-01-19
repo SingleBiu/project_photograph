@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-07-01 18:55:31
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-07-28 20:50:12
+ * @LastEditTime: 2022-01-19 14:03:03
  * @Description: 不带头结点的双向链表
  */
 #include"node.h"
@@ -34,7 +34,7 @@ int readdirent(DIR *dir,char *path)
     int i = 0;              //bmp图片的数量
     int j = 0;              //jpg图片的数量
     int k = 0;              //子目录的数量
-    // FIXME:
+    
     struct dirent *p = NULL;
     
     while (p = readdir(dir))
@@ -43,7 +43,7 @@ int readdirent(DIR *dir,char *path)
         char filename[64];
         sprintf(filename,"%s%s",path, p->d_name);
         // printf("%s\n", filename);
-        // FIXME:
+    
         struct stat st;
         stat(filename, &st);
 

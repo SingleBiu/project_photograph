@@ -12,7 +12,7 @@ INC += -I ../inc/
 
 #LIBS保存的是工程所有需要用到的库以及库的搜索路径
 LIBS += -L . -l pthread 
-LIBS += -L /usr/arm_libs  -l jpeg 
+LIBS += -L ../lib_jpeg  -l jpeg 
 
 $(TARGET):$(OBJS)
 		$(CC) $^ $(LIBS) -o $@
