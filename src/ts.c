@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-07-26 15:27:24
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-09-09 16:46:30
+ * @LastEditTime: 2024-10-15 08:06:37
  * @Description: file content
  */
 
@@ -13,7 +13,7 @@ extern int TOUCH_EVENT;
 
 int touch_init()
 {
-	int fd = open("/dev/input/event0", O_RDONLY);
+	int fd = open("/dev/input/event0", O_RDWR);
 	if (fd == -1)
 	{
 		printf("failed to open /dev/input/event0\n");

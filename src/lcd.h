@@ -18,9 +18,9 @@
 #include<string.h>
 
 // LCD屏幕的宽度
-#define WIDTH  800
+#define WIDTH  720
 // LCD屏幕的高度
-#define HEIGHT 480
+#define HEIGHT 720
 
 // 常见颜色
 #define RED       0xff0000

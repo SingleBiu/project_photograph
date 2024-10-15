@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-07-22 14:48:40
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-09-09 16:41:43
+ * @LastEditTime: 2024-10-15 08:07:07
  * @Description: 一个简单的能展示bmp图片和jpg图片的电子相册
  */
 #include"lcd.h"
@@ -53,9 +53,13 @@ int main(int argc, char *argv[])
     Node *ptr = H->pic_list;
     
     // 开始的图片
-    bmp_display("startup",0,0);
+    bmp_display("startup.bmp",0,0);
+
+    printf("Line:%d Func:%s",__LINE__,__func__);
 
     ts_fd = touch_init();
+
+    printf("Line:%d Func:%s",__LINE__,__func__);
 
     pthread_t ts;
     int res = pthread_create(&ts,NULL,thread_touch,NULL);
@@ -65,10 +69,12 @@ int main(int argc, char *argv[])
         exit(res);
     }
 
+    printf("Line:%d Func:%s",__LINE__,__func__);
+
     while (1)
     {
         // // 获得触摸屏幕输入
-        // int mv = get_user_input();
+        // int mv = get_user_input(ts_fd);
         // if (mv == MOVE_RIGHT)
         if (TOUCH_EVENT == MOVE_RIGHT)
         {
